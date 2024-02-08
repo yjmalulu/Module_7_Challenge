@@ -58,33 +58,33 @@ The CFO of your firm has requested a report to help analyze potential fraudulent
 * Some fraudsters hack a credit card by making several small transactions (generally less than $2.00), which are typically ignored by cardholders. 
 
   * How can you isolate (or group) the transactions of each cardholder?
-    load transaction data, clean up any repeats, and show how much each person spent in total.
+    *Load transaction data, clean up any repeats, and show how much each person spent in total.
 
   * Count the transactions that are less than $2.00 per cardholder.
-    Use a SQL query to get transactions under $2 from your database.
-    Load these transactions into a pandas DataFrame.
-    Group the transactions by cardholder's name.
-    Count the transactions for each cardholder.
+    *Use a SQL query to get transactions under $2 from your database.
+    *Load these transactions into a pandas DataFrame.
+    *Group the transactions by cardholder's name.
+    *Count the transactions for each cardholder.
   
   * Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
-    A large number of small transactions (less than $2.00) could indicate that a credit card has been compromised.
-    In this scenario, the top 6 cards, each with more than 10 small transactions, are the most likely to have been hacked.
+    *A large number of small transactions (less than $2.00) could indicate that a credit card has been compromised.
+    *In this scenario, the top 6 cards, each with more than 10 small transactions, are the most likely to have been hacked.
 
 * Take your investigation a step futher by considering the time period in which potentially fraudulent transactions are made. 
 
   * What are the top 100 highest transactions made between 7:00 am and 9:00 am?
 
   * Do you see any anomalous transactions that could be fraudulent?
-    The outliers in the box plot are the anomalous transactions that could be fraudulent.
+    *The outliers in the box plot are the anomalous transactions that could be fraudulent.
 
   * Is there a higher number of fraudulent transactions made during this time frame versus the rest of the day?
-    Yes.
+    *Yes.
 
   * If you answered yes to the previous question, explain why you think there might be fraudulent transactions during this time frame.
-    There are much more outliers in the box plot the rest of the day, which indicates a high number of fraudulent transactions made during this time.
+    *There are much more outliers in the box plot the rest of the day, which indicates a high number of fraudulent transactions made during this time.
 
 * What are the top 5 merchants prone to being hacked using small transactions?
-  Riggs-Adams, White-Hall, Jarvis-Turner,Johnson and Sons, Ruiz-Anderson are the top 5 merchants prone to being hacked using small transactions.
+  *Riggs-Adams, White-Hall, Jarvis-Turner,Johnson and Sons, Ruiz-Anderson are the top 5 merchants prone to being hacked using small transactions.
   
 * Create a view for each of your queries.
 
@@ -99,20 +99,20 @@ Your CFO has also requested detailed trends data on specific card holders. Use t
   * Next, to better compare their patterns, create a single line plot that contains both card holders' trend data.  
 
   * What difference do you observe between the consumption patterns? Does the difference suggest a fraudulent transaction? Explain your rationale.
-    Fraud Detection
-    Overall, cardholder 18 is likely hacked, while cardholder 2 is probably not.
-    The consumption data for cardholder 2 fluctuates within a normal range, with no outliers present in the plot. Conversely, cardholder 18's plot displays several spikes, where the value of these spikes is almost 100 times greater than that of the others, suggesting it has likely been compromised.
+    *Fraud Detection
+    *Overall, cardholder 18 is likely hacked, while cardholder 2 is probably not.
+    *The consumption data for cardholder 2 fluctuates within a normal range, with no outliers present in the plot. Conversely, cardholder 18's plot displays several spikes, where the value of these spikes is almost 100 times greater than that of the others, suggesting it has likely been compromised.
 
 * The CEO of the biggest customer of the firm suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay quite expensive restaurant bills. Again, for privacy reasons, you know only that the cardholder ID in question is 25.
 
   * Using hvPlot, create a box plot, representing the expenditure data from January 2018 to June 2018 for cardholder ID 25.
   
   * Are there any outliers for cardholder ID 25? How many outliers are there per month?
-    There are 9 outliers in total: one outlier each in January, March, and May; three outliers in both April and June; and no outliers in February.
+    *There are 9 outliers in total: one outlier each in January, March, and May; three outliers in both April and June; and no outliers in February.
     
   * Do you notice any anomalies? Describe your observations and conclusions.
-    Evidence suggests that cardholder 25's corporate credit card has been used without authorization.
-    In the box plot, there are 9 points significantly outside the norm, indicating potential unauthorized transactions.
+    *Evidence suggests that cardholder 25's corporate credit card has been used without authorization.
+    *In the box plot, there are 9 points significantly outside the norm, indicating potential unauthorized transactions.
     
 ### Challenge
 
